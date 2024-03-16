@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-shadow {
+    text-shadow: 2px 2px 0 #eee, 4px 3px 0 rgba(0, 0, 0, .18);
+}
+
+.bg-gradient-header {
+    background: repeating-linear-gradient(to right, #ff4200 0, #ffba00 50%, #ff4800 100%);
+    background-size: 200% auto;
+    background-position: 0 100%;
+    animation: gradient 1.8s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.nav-hover>a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffe400;
+}
+
+.nav-hover a:hover {
+    text-shadow: 2px 2px 1px #1b1b1e96;
+    color: #ffe400;
+    transition: all ease 0.8s;
+}
+
+/* .module-border-wrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    transition: all .3s linear;
+    width: 0;
+    height: 100%;
+    background-color: #ff682d;
+}
+
+.module-border-wrap {
+    max-width: 185px;
+    width: 100%;
+    position: relative;
+    background-color: #ff682d;
+    padding: 2px;
+} */
+
+.bgFooter {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    background-position: center center;
+    background-image: url(https://3ce.vn/wp-content/themes/3celectric/images/bg-foot-3C.png);
+    padding-top: 50px;
+    padding: 55px 0;
+    position: relative;
+}
