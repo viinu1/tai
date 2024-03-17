@@ -72,3 +72,27 @@
     padding: 55px 0;
     position: relative;
 }
+
+
+.icon-phone {
+    color: #ff6a00;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    position: relative;
+    display: inline-block;
+}
+
+.ttdv {
+    font-weight: 600;
+    align-items: center;
+    font-size: 33px;
+    margin: 0 0 30px 0;
+    color: #ff6a00;
+    -ms-flex-wrap: wrap;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
